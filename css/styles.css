@@ -227,6 +227,8 @@ nav h1 a {
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
   width: 50%;
+  display: grid;
+  grid-template-columns: 100%;
 }
 #reviews-container {
   padding: 30px 40px 80px;
@@ -287,10 +289,60 @@ nav h1 a {
     width: auto;
     height: auto;
   }
-  body.inside{
+  .inside #footer {
+    bottom: 0;
+    position: relative;
+     width: 100%; 
+  }
+  #breadcrumb {
+    padding: 10px 40px 16px;
+    list-style: none;
+    background-color: #eee;
+    font-size: 17px;
+    margin: 0;
+    width: 100%;
+  }
+  .inside #map-container {
+    background: blue none repeat scroll 0 0;
+    height: 40%;
+    position: fixed;
+    right: 0;
+    top: 16vh;
+    width: 100%;
+    z-index: 800;
+  }
+  .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+    border: 2px solid rgba(0,0,0,0.2);
+    background-clip: padding-box;
+    position: relative;
+    bottom: calc(-28vh + 32px);
+    left: 87vw;
+  }
+  #restaurant-container, #reviews-container {
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #fff;
+    padding: 58vh 0vw 0px;
+    width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 126px 40vh auto;
+  }
+  #restaurant-name {
+    color: #f18200;
+    font-family: Arial,sans-serif;
+    font-size: large;
+    font-weight: 200;
+    letter-spacing: 0;
+    margin: 15px 0vw 30px;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+  #restaurant-container, #reviews-container {
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #fff;
+    padding: 58vh 5vw 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
   }
 }
 
