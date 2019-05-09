@@ -416,7 +416,6 @@ nav h1 a {
     margin: 0px 7.5% 0;
     text-transform: uppercase;
   }
-  }
     #reviews-list li p:nth-child(4) {
     margin: 0 0 0;
     grid-area: p4;
@@ -452,7 +451,7 @@ nav h1 a {
   }
 }
 
-@media screen and (min-width: 430px){
+@media screen and (min-width: 430px) {
   .filter-options select {
     background-color: white;
     border: 1px solid #fff;
@@ -474,5 +473,56 @@ nav h1 a {
     text-align: left;
     width: auto;
     height: auto;
+  }
+  #restaurant-container {
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #fff;
+    padding: 0 0 0;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 88%;
+    padding-left: 5%
+  }
+  #reviews-container {
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #fff;
+    padding: 0 0 0;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 77%;
+    padding-left: 5%
+  }
+  #reviews-container h2 {
+    color: #f58500;
+    font-size: 24pt;
+    font-weight: 300;
+    letter-spacing: -1px;
+    padding-bottom: 1pt;
+    padding-top: 10%;
+  }
+  #reviews-list li {
+    background-color: #fff;
+    border: 2px solid #f3f3f3;
+    display: block;
+    list-style-type: none;
+    margin: 0 0 30px;
+    overflow: hidden;
+    padding: 0 20px 20px;
+    position: relative;
+    width: 90%
+  }
+  #maincontent {
+    background-color: #f3f3f3;
+    min-height: 100%;
+    padding-bottom: 7%;
+  }
+  #footer {
+    background-color: #444;
+    color: #aaa;
+    font-size: 8pt;
+    letter-spacing: 1px;
+    padding: 2% 0 3%;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
